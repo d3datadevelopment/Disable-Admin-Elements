@@ -1,0 +1,38 @@
+{
+  "name": "d3/disableadminelements",
+  "description": "Ausblenden von Menuepunkten im Admin",
+  "type": "oxideshop-module",
+  "version": "1.0",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3"
+  ],
+  "authors": [
+    {
+        "name": "D3 Data Development (Inh. Thomas Dartsch)",
+        "email": "info@shopmodule.com",
+        "homepage": "http://www.d3data.de",
+        "role": "Owner"
+    }
+  ],
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "GPL-3.0-or-later"
+  ],
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "d3/disableadminelements"
+    }
+  },
+  "require": {
+    "oxid-esales/oxideshop-metapackage-ce": "~6.0.0 || ~6.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "D3\\DisableAdminElements\\": "../../../source/modules/d3/disableadminelements"
+    }
+  }
+}
