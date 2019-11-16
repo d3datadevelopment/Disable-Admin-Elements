@@ -1,4 +1,4 @@
-# DisableAdminElements
+# Disable Admin Elements
 Hide unused menu items in the oxid eshop admin
 
 ## Features
@@ -11,4 +11,4 @@ Hide unused menu items in the oxid eshop admin
 
 * Run this composer statement in your shop. Adjust this instruction if your installation requires it.
 
-    `composer require d3/disableadminelements --update-no-dev`
+    `composer require d3/disable-admin-elements --update-no-dev`
