@@ -28,7 +28,7 @@
     }
   },
   "require": {
-    "oxid-esales/oxideshop-metapackage-ce": "~6.0.0 || ~6.1.0"
+    "oxid-esales/oxideshop-ce": "6.0 - 6.6"
   },
   "autoload": {
     "psr-4": {
