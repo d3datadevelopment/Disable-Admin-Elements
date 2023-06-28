@@ -2,7 +2,6 @@
   "name": "d3/disableadminelements",
   "description": "Ausblenden von Menuepunkten im Admin",
   "type": "oxideshop-module",
-  "version": "1.0",
   "keywords": [
     "oxid",
     "modules",
