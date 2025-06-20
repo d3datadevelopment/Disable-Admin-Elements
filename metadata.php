@@ -14,12 +14,11 @@ $sMetadataVersion = '2.1';
 $aModule = array(
     'id'          => 'd3disableadminelements',
     'title'       =>
-        'D� Ausblenden von ungenutzen Men&uuml;punkten im Admin',
+        'D³ Ausblenden von ungenutzen Men&uuml;punkten im Admin',
     'description' => array(
-        'de' => 'Tragen Sie in den Einstellungen die id der gew&uuml;nschten Elemente (Men&uuml;punkte, Tabs etc.) aus den menu.xml Dateien ein und das jeweilige Element wird f&uuml;r alle Adminbenutzer ausgeblendet.',
+        'de' => 'Tragen Sie in den Einstellungen die id der gewünschten Elemente (Menüpunkte, Tabs etc.) aus den menu.xml Dateien ein und das jeweilige Element wird für alle Adminbenutzer ausgeblendet.',
         'en' => '',
     ),
-    'thumbnail'   => 'picture.png',
     'version'     => '1.0',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
