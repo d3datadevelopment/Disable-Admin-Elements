@@ -14,7 +14,7 @@ $sMetadataVersion = '2.1';
 $aModule = array(
     'id'          => 'd3disableadminelements',
     'title'       =>
-        'D³ Ausblenden von ungenutzen Men&uuml;punkten im Admin',
+        'D³ Ausblenden von ungenutzen Menüpunkten im Admin',
     'description' => array(
         'de' => 'Tragen Sie in den Einstellungen die id der gewünschten Elemente (Menüpunkte, Tabs etc.) aus den menu.xml Dateien ein und das jeweilige Element wird für alle Adminbenutzer ausgeblendet.',
         'en' => '',
