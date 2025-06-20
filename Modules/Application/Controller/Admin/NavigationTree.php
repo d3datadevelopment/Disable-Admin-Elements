@@ -13,6 +13,8 @@
 namespace D3\DisableAdminElements\Modules\Application\Controller\Admin;
 
 use DOMXPath;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
+use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
 
 class NavigationTree extends NavigationTree_parent
 {
