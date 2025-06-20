@@ -12,7 +12,7 @@
     {
         "name": "D3 Data Development (Inh. Thomas Dartsch)",
         "email": "info@shopmodule.com",
-        "homepage": "http://www.d3data.de",
+        "homepage": "https://www.d3data.de",
         "role": "Owner"
     }
   ],
@@ -20,18 +20,13 @@
   "license": [
     "GPL-3.0-or-later"
   ],
-  "extra": {
-    "oxideshop": {
-      "source-directory": "/src",
-      "target-directory": "d3/disableadminelements"
-    }
-  },
+  "extra": {},
   "require": {
-    "oxid-esales/oxideshop-ce": "6.0 - 6.14"
+    "oxid-esales/oxideshop-ce": "7.0 - 7.3"
   },
   "autoload": {
     "psr-4": {
-      "D3\\DisableAdminElements\\": "../../../source/modules/d3/disableadminelements"
+      "D3\\DisableAdminElements\\": ""
     }
   }
 }

@@ -12,7 +12,6 @@
 
 namespace D3\DisableAdminElements\Modules\Application\Controller\Admin;
 
-use OxidEsales\Eshop\Core\Registry;
 use DOMXPath;
 
 class NavigationTree extends NavigationTree_parent
@@ -25,9 +24,9 @@ class NavigationTree extends NavigationTree_parent
      * @param string $parentXPath parent xpath
      * @param string $childXPath  child xpath from parent
      */
-    protected function _cleanEmptyParents($dom, $parentXPath, $childXPath)
+    protected function cleanEmptyParents($dom, $parentXPath, $childXPath)
     {
-        parent::_cleanEmptyParents($dom, $parentXPath, $childXPath);
+        parent::cleanEmptyParents($dom, $parentXPath, $childXPath);
 
         $xPath = new DomXPath($dom);
         $nodeList = $xPath->query($parentXPath);
@@ -36,7 +35,7 @@ class NavigationTree extends NavigationTree_parent
             $id = $node->getAttribute('id');
             $childList = $xPath->query("{$parentXPath}[@id='$id']/$childXPath");
 
-            $aListOfDisabledElements = Registry::getConfig()->getShopConfVar( 'd3disableAdminElements_elemtentlist');
+            $aListOfDisabledElements = $this->getModulConfigurationAsCollection('d3disableAdminElements_elemtentlist', 'd3disableadminelements');
 
             foreach($childList as $id => $node) {
 
@@ -44,8 +43,24 @@ class NavigationTree extends NavigationTree_parent
                     $node->parentNode->removeChild($node);
                 }
             }
-
         }
 
     }
+
+    public function getModulConfigurationAsCollection(string $sParam, string $sModulId)
+    {
+        $moduleSettingService = $this->getModuleSettingService();
+        return $moduleSettingService->getCollection($sParam, $sModulId);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getModuleSettingService()
+    {
+        return ContainerFactory::getInstance()
+            ->getContainer()
+            ->get(ModuleSettingServiceInterface::class);
+    }
+
 }
